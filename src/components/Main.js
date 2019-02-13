@@ -1,10 +1,27 @@
 import React from "react";
+import { Col, Row } from "react-materialize";
 
-const Main = props => {
+const Main = () => {
     return (
-        <div>
-            <p>Aqui é o corpo do conteúdo</p>
-        </div>
+        <Row>
+            <Col s={6} className='content'>
+                <p>Aqui é a página principal</p>
+                <p>Aqui é a página principal</p>
+                <p>Aqui é a página principal</p>
+                <p>Aqui é a página principal</p>
+                <p>Aqui é a página principal</p>
+                <p>Aqui é a página principal</p>
+                <p>Aqui é a página principal</p>
+                <p>Aqui é a página principal</p>
+                <p>Aqui é a página principal</p>
+                <p>Aqui é a página principal</p>
+            </Col>
+            <Col s={6} className='content1'>
+                <p>Aqui é a página principal</p>
+                <p>Aqui é a página principal</p>
+              
+            </Col>
+        </Row>
     );
 };
 

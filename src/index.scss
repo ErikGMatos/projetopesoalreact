@@ -2,17 +2,47 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
+    height: 100%;
     //background-color: #e4e4e4;
 }
 
-.header {
-    background-color: aquamarine;
+html,
+#root {
+    height: 100%;
 }
 
-.sidebar {
-    background-color: blueviolet;
+.row {
+    display: flex;
+    margin-bottom: 0;
 }
 
-.main {
-    background-color: brown;
+.principal {
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    height: 100%;
+
+    > div {
+        height: calc(100% - 64px);
+    }
+
+    .content {
+        background-color: aqua;
+    }
+
+    .content1 {
+        background-color: coral;
+    }
+
+    .brand-logo {
+        background: url(./imagens/logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: rgba(0, 0, 0, 0);
+        pointer-events: none;
+        cursor: pointer;
+        width: 120px;
+        text-indent: -9999px;
+        margin: 0 1rem;
+    }
 }
