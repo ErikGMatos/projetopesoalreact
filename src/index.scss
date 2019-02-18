@@ -11,9 +11,26 @@ html,
     height: 100%;
 }
 
+.button-collapse[data-activates="nav-mobile"] {
+    display: none;
+}
+
+a[data-activates="sidenav_0"] {
+    position: absolute;
+    top: 1.2rem;
+    left: 0.5rem;
+    color: #fafafa;
+    font-size: 1.3rem;
+}
+
 .row {
     display: flex;
     margin-bottom: 0;
+    flex-wrap: wrap;
+}
+
+.userView {
+    background-color: #ee6e73;
 }
 
 .principal {
@@ -44,5 +61,17 @@ html,
         width: 120px;
         text-indent: -9999px;
         margin: 0 1rem;
+    }
+    .cachorros {
+        img {
+            max-width: 240px;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .principal {
+        width: 100%;
+        margin-left: 0;
     }
 }

@@ -1,46 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <head>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="theme-color" content="#000000" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+        />
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <title>React App</title>
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+        <script
+            type="text/javascript"
+            src="https://www.gstatic.com/charts/loader.js"
+        ></script>
+        <!-- <script type="text/javascript">
+            google.charts.load("current", { packages: ["corechart"] });
+            google.charts.setOnLoadCallback(drawChart);
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <!-- Import Materialize js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">       </script>    
-  </body>
+            function drawChart() {
+                var data = new google.visualization.DataTable();
+                data.addColumn("number", "X");
+                data.addColumn("number", "Dogs");
+                data.addColumn("number", "Cats");
+
+                data.addRows([
+                    [68,100,120],
+                    [0, 0, 0],
+                    [1, 10, 5],
+                    [2, 23, 15],
+                    [3, 17, 9],
+                    [4, 18, 10],
+                    [5, 9, 5],
+                    [6, 11, 3],
+                    [7, 27, 19],
+                    [8, 33, 25],
+                    [9, 40, 32],
+                    [10, 32, 24],
+                    [11, 35, 27],
+                    [12, 30, 22],
+                    [13, 40, 32],
+                    [14, 42, 34],
+                    [15, 47, 39],
+                    [16, 44, 36],
+                    [17, 48, 40],
+                    [18, 52, 44],
+                    [19, 54, 46],
+                    [20, 42, 34],
+                    [21, 55, 47],
+                    [22, 56, 48],
+                    [23, 57, 49],
+                    [24, 60, 52],
+                    [25, 50, 42],
+                    [26, 52, 44],
+                    [27, 51, 43],
+                    [28, 49, 41],
+                    [29, 53, 45],
+                    [30, 55, 47],
+                    [31, 60, 52],
+                    [32, 61, 53],
+                    [33, 59, 51],
+                    [34, 62, 54],
+                    [35, 65, 57],
+                    [36, 62, 54],
+                    [37, 58, 50],
+                    [38, 55, 47],
+                    [39, 61, 53],
+                    [40, 64, 56],
+                    [41, 65, 57],
+                    [42, 63, 55],
+                    [43, 66, 58],
+                    [44, 67, 59],
+                    [45, 69, 61],
+                    [46, 69, 61],
+                    [47, 70, 62],
+                    [48, 72, 64],
+                    [49, 68, 60],
+                    [50, 66, 58],
+                    [51, 65, 57],
+                    [52, 67, 59],
+                    [53, 70, 62],
+                    [54, 71, 63],
+                    [55, 72, 64],
+                    [56, 73, 65],
+                    [57, 75, 67],
+                    [58, 70, 62],
+                    [59, 68, 60],
+                    [60, 64, 56],
+                    // [61, 60, 52],
+                    // [62, 65, 57],
+                    // [63, 67, 59],
+                    // [64, 68, 60],
+                    // [65, 69, 61],
+                    // [66, 70, 62],
+                    // [67, 72, 64],
+                    // [68, 75, 67],
+                    // [69, 80, 72]
+                ]);
+
+                var options = {
+                    curveType: "function",
+                    hAxis: {
+                        title: "Time"
+                    },
+                    vAxis: {
+                        title: "Popularity"
+                    },
+                    //colors: ["black", "green"],
+                    //backgroundColor: "#e4e4e4",
+                    //backgroundColor: {
+                    //    stroke: "red",
+                    //     strokeWidth: 50
+                    // },
+                    //  chartArea: {
+                    //    backgroundColor: "blue"
+                    //},
+                    //colors: ["red", "green"],
+                    animation: {
+                        startup: true,
+                        easing: "out",
+                        duration: 1700
+                    },
+                    title: "Motivation and Energy Level Throughout the Day",
+                    trendlines: {
+                        0: { type: "linear", lineWidth: 2, opacity: 0.3 },
+                        1: { type: "exponential", lineWidth: 2, opacity: 0.3 }
+                    },
+                    hAxis: {
+                        title: "Time of Day",
+                        format: "h:mm a",
+                        viewWindow: {
+                            min: [7, 30, 0],
+                            max: [17, 30, 0]
+                        }
+                    },
+                    vAxis: {
+                        title: "Rating (scale of 1-10)"
+                    },
+                    height:500,
+                    width:2800
+
+                };
+
+                var chart = new google.visualization.ColumnChart(
+                    document.getElementById("chart1")
+                );
+                chart.draw(data, options);
+            } -->
+        </script>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!-- Import Materialize js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    </body>
 </html>
