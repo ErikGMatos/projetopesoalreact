@@ -1,17 +1,20 @@
 import React, { Component } from "react";
 import { Row, Col } from "react-materialize";
+
+import Doughnut from "./GraphComponent/doughnut";
+import Pie from "./GraphComponent/pie";
+
 class Contato extends Component {
     render() {
         return (
             <Row>
                 <Col s={12} l={6} className="content">
-                    <p>Aqui é a página de contatos</p>{" "}
-                    <p>Aqui é a página de contatos</p>
+                    <Doughnut/>
                 </Col>
-                <Col s={12} l={6} className="content1">
-                    <p>Aqui é a página de contatos</p>
-                    <p>Aqui é a página de contatos</p>
+                <Col s={12} l={6} className="content">
+                    <Pie/>
                 </Col>
+               
             </Row>
         );
     }

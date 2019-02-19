@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { Navbar } from "react-materialize";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faPhone } from "@fortawesome/free-solid-svg-icons";
+// import { Link } from "react-router-dom";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faHome, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 class Header extends Component {
     render() {
         return (
             <Navbar brand="33333333" right>
-                <li>
+                {/* <li>
                     <Link to="/">
                         <FontAwesomeIcon icon={faHome} />
                         Página Inicial
@@ -19,7 +19,7 @@ class Header extends Component {
                         <FontAwesomeIcon icon={faPhone} />
                         Contatos
                     </Link>
-                </li>
+                </li> */}
             </Navbar>
         );
     }

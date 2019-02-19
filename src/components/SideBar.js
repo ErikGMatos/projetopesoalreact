@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { SideNav, SideNavItem } from "react-materialize";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 import { connect } from "react-redux";
 
@@ -9,9 +10,11 @@ import { buscaDog } from "../store/actions/busca-dog-action";
 
 class Sidebar extends Component {
     DrawGraph(event) {
+        debugger;
         event.preventDefault();
         console.log("cliquei ");
-        this.props.buscaDog(2)
+        //this.props.buscaDog(2)
+   
     }
 
     render() {
@@ -34,22 +37,33 @@ class Sidebar extends Component {
                         email: "erik_senac@gmail.com"
                     }}
                 />
-                <SideNavItem
+                 <Link
+                    to='/'
                     className="link-graph"
-                    onClick={event => {
-                        this.DrawGraph(event);
-                    }}
+                    // onClick={event => {
+                    //     this.DrawGraph(event);
+                    // }}
                 >
-                    Graficos de vendas
-                </SideNavItem>
-                <SideNavItem
+                    Home
+                </Link>
+                <Link
+                    to='/main'
                     className="link-graph"
-                    onClick={e => {
-                        this.DrawGraph(e);
-                    }}
+                    // onClick={event => {
+                    //     this.DrawGraph(event);
+                    // }}
                 >
-                    Graficos de pedidos
-                </SideNavItem>
+                    Alguns graficos
+                </Link>
+                <Link
+                    to='/contato'
+                    className="link-graph"
+                    // onClick={e => {
+                    //     this.DrawGraph(e);
+                    // }}
+                >
+                    Mais alguns graficos
+                </Link>
             </SideNav>
         );
     }

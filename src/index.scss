@@ -23,11 +23,11 @@ a[data-activates="sidenav_0"] {
     font-size: 1.3rem;
 }
 
-.row {
-    display: flex;
-    margin-bottom: 0;
-    flex-wrap: wrap;
-}
+// .row {
+//     display: flex;
+//     margin-bottom: 0;
+//     flex-wrap: wrap;
+// }
 
 .userView {
     background-color: #ee6e73;
@@ -42,13 +42,7 @@ a[data-activates="sidenav_0"] {
         height: calc(100% - 64px);
     }
 
-    .content {
-        background-color: aqua;
-    }
-
-    .content1 {
-        background-color: coral;
-    }
+   
 
     .brand-logo {
         background: url(./imagens/logo.png);
