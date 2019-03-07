@@ -32,7 +32,7 @@ class Sidebar extends Component {
                     user={{
                         //background: 'black',
                         image:
-                            "https://media.licdn.com/dms/image/C4E03AQGBWEDrA-ihBg/profile-displayphoto-shrink_200_200/0?e=1551916800&v=beta&t=F8Aa3hax_3zoIgMuDD4G4ff0qIIzuMrD09zex_9_qog",
+                            "https://media.licdn.com/dms/image/C4E03AQGBWEDrA-ihBg/profile-displayphoto-shrink_100_100/0?e=1557360000&v=beta&t=53MWDj-pVYwilbhrxaasv6feoI3mw7jDVXncoUmMK4Y",
                         name: "Erik Garces Matos",
                         email: "erik_senac@gmail.com"
                     }}
