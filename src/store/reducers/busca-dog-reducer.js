@@ -13,7 +13,7 @@ export default function busca_dog_reducer(state = INITIAL_STATE, action) {
                 erro: false
             };
         case "BUSCA_DOG_SUCESSO":
-            return {  
+            return {
                 dogs: action.dogs,
                 carregando: false,
                 erro: false

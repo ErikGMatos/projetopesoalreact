@@ -9,12 +9,11 @@ class Contato extends Component {
         return (
             <Row>
                 <Col s={12} l={6} className="content">
-                    <Doughnut/>
+                    <Doughnut />
                 </Col>
                 <Col s={12} l={6} className="content">
-                    <Pie/>
+                    <Pie />
                 </Col>
-               
             </Row>
         );
     }

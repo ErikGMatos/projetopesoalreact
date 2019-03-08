@@ -14,7 +14,6 @@ class Sidebar extends Component {
         event.preventDefault();
         console.log("cliquei ");
         //this.props.buscaDog(2)
-   
     }
 
     render() {
@@ -37,8 +36,8 @@ class Sidebar extends Component {
                         email: "erik_senac@gmail.com"
                     }}
                 />
-                 <Link
-                    to='/'
+                <Link
+                    to="/"
                     className="link-graph"
                     // onClick={event => {
                     //     this.DrawGraph(event);
@@ -47,7 +46,7 @@ class Sidebar extends Component {
                     Home
                 </Link>
                 <Link
-                    to='/main'
+                    to="/main"
                     className="link-graph"
                     // onClick={event => {
                     //     this.DrawGraph(event);
@@ -56,7 +55,7 @@ class Sidebar extends Component {
                     Alguns graficos
                 </Link>
                 <Link
-                    to='/contato'
+                    to="/contato"
                     className="link-graph"
                     // onClick={e => {
                     //     this.DrawGraph(e);
