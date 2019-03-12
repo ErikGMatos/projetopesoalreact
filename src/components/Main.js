@@ -60,10 +60,10 @@ class Main extends Component {
     render() {
         return (
             <Row>
-                <Col s={6}>
+                <Col s={12} l={6}>
                     <Bar  />
                 </Col>
-                <Col s={6}>
+                <Col s={12} l={6}>
                     <Line data={dataLine} />
                 </Col>
 
