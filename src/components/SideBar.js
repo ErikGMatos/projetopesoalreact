@@ -6,17 +6,19 @@ import { Link } from "react-router-dom";
 
 import { connect } from "react-redux";
 
-import { buscaDog } from "../store/actions/busca-dog-action";
+import { buscaDog } from "~/store/actions/busca-dog-action";
 
+import minhavariavel from '~/teste/maisum/index'
 class Sidebar extends Component {
     DrawGraph(event) {
-        debugger;
         event.preventDefault();
         console.log("cliquei ");
+
         //this.props.buscaDog(2)
     }
 
     render() {
+        console.log(minhavariavel);
         return (
             <SideNav
                 fixed={true}
@@ -25,6 +27,7 @@ class Sidebar extends Component {
                         <FontAwesomeIcon icon={faBars} />
                     </a>
                 }
+                options={{ closeOnClick: true }}
             >
                 <SideNavItem
                     userView
@@ -36,31 +39,13 @@ class Sidebar extends Component {
                         email: "erik_senac@gmail.com"
                     }}
                 />
-                <Link
-                    to="/"
-                    className="link-graph"
-                    // onClick={event => {
-                    //     this.DrawGraph(event);
-                    // }}
-                >
+                <Link to="/" className="link-graph">
                     Home
                 </Link>
-                <Link
-                    to="/main"
-                    className="link-graph"
-                    // onClick={event => {
-                    //     this.DrawGraph(event);
-                    // }}
-                >
+                <Link to="/main" className="link-graph">
                     Alguns graficos
                 </Link>
-                <Link
-                    to="/contato"
-                    className="link-graph"
-                    // onClick={e => {
-                    //     this.DrawGraph(e);
-                    // }}
-                >
+                <Link to="/contato" className="link-graph">
                     Mais alguns graficos
                 </Link>
             </SideNav>

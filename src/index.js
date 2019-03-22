@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 
-
 // import {GoogleCharts} from 'google-charts';
 // GoogleCharts.load(drawChart);
  

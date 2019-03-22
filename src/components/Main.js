@@ -2,11 +2,9 @@ import React, { Component } from "react";
 import { Col, Row } from "react-materialize";
 import { connect } from "react-redux";
 
-import Bar from "./GraphComponent/bar";
+import Graficos from "./GraphComponent";
 
-import Line from "./GraphComponent/line";
-
-
+console.log(Graficos);
 // const dataBar = {
 //     labels: [
 //         "Janeiro",
@@ -61,10 +59,10 @@ class Main extends Component {
         return (
             <Row>
                 <Col s={12} l={6}>
-                    <Bar  />
+                    <Graficos.Bar />
                 </Col>
                 <Col s={12} l={6}>
-                    <Line data={dataLine} />
+                    <Graficos.Line data={dataLine} />
                 </Col>
 
                 {/* <Col s={12} className="cachorros">
